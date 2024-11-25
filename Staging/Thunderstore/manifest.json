@@ -1,7 +1,7 @@
 {
     "name": "RagdollView",
     "version_number": "1.2.0",
-    "website_url": "",
+    "website_url": "https://github.com/Lakatrazz/RagdollView",
     "description": "See from the ragdoll's perspective when using other player ragdoll mods.",
     "dependencies": [
          "gnonme-BoneLib-3.0.0"
