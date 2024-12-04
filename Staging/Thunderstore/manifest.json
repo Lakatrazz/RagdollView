@@ -1,6 +1,6 @@
 {
     "name": "RagdollView",
-    "version_number": "1.2.0",
+    "version_number": "1.2.1",
     "website_url": "https://github.com/Lakatrazz/RagdollView",
     "description": "See from the ragdoll's perspective when using other player ragdoll mods.",
     "dependencies": [

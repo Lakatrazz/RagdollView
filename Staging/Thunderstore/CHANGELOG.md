@@ -1,3 +1,6 @@
+**v1.2.1**
+- Fixed view going to spawn for one frame when unragdolling
+
 **v1.2.0**
 - Updated for Patch 6
 

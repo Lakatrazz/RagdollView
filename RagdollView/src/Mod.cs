@@ -11,7 +11,7 @@ namespace RagdollView;
 
 public class RagdollViewMod : MelonMod 
 {
-    public const string Version = "1.2.0";
+    public const string Version = "1.2.1";
 
     public static MelonPreferences_Category MelonPrefCategory { get; private set; }
     public static MelonPreferences_Entry<bool> MelonPrefEnabled { get; private set; }
@@ -20,8 +20,6 @@ public class RagdollViewMod : MelonMod
 
     public static Page MainPage { get; private set; }
     public static BoolElement EnabledElement { get; private set; }
-
-    private static bool _isRigDirty;
 
     private static bool _preferencesSetup = false;
 
@@ -103,15 +101,6 @@ public class RagdollViewMod : MelonMod
             playspace.rotation = physicsHead.rotation * Quaternion.Inverse(playspaceHead.rotation);
 
             playspace.position += physicsHead.position - playspaceHead.position;
-
-            _isRigDirty = true;
-        }
-        else if (_isRigDirty)
-        {
-            playspace.localPosition = Vector3.zero;
-            playspace.localRotation = Quaternion.identity;
-            rm.remapHeptaRig.SetTwist(0f);
-            _isRigDirty = false;
         }
     }
 }
